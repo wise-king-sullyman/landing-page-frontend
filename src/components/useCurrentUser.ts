@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import useLoaded from './useLoaded';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 import { ChromeUser } from '@redhat-cloud-services/types';
 
 const useCurrentUser = () => {

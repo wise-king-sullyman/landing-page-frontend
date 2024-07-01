@@ -11,14 +11,13 @@ import {
 import { Button } from '@patternfly/react-core/dist/dynamic/components/Button';
 import { EmptyState } from '@patternfly/react-core/dist/dynamic/components/EmptyState';
 import { EmptyStateBody } from '@patternfly/react-core/dist/dynamic/components/EmptyState';
-import { EmptyStateIcon } from '@patternfly/react-core/dist/dynamic/components/EmptyState';
 import { EmptyStateVariant } from '@patternfly/react-core/dist/dynamic/components/EmptyState';
 import { Stack } from '@patternfly/react-core/dist/dynamic/layouts/Stack';
 import { StackItem } from '@patternfly/react-core/dist/dynamic/layouts/Stack';
 import { Title } from '@patternfly/react-core/dist/dynamic/components/Title';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/dynamic/icons/external-link-alt-icon';
 import HeadsetIcon from '@patternfly/react-icons/dist/dynamic/icons/headset-icon';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 import SkeletonTable from '@patternfly/react-component-groups/dist/dynamic/SkeletonTable';
 import { MAX_ROWS, columnNames, getUrl, labelColor } from '../../utils/consts';
 import './support-case-widget.scss';
@@ -81,11 +80,15 @@ const SupportCaseWidget: React.FunctionComponent = () => {
           ]}
         />
       ) : cases.length === 0 ? (
-        <EmptyState variant={EmptyStateVariant.lg}>
-          <EmptyStateIcon icon={HeadsetIcon} />
-          <Title headingLevel="h4" size="lg">
-            No open support cases
-          </Title>
+        <EmptyState
+          titleText={
+            <Title headingLevel="h4" size="lg">
+              No open support cases
+            </Title>
+          }
+          icon={HeadsetIcon}
+          variant={EmptyStateVariant.lg}
+        >
           <EmptyStateBody>
             <Stack>
               <StackItem>
@@ -121,7 +124,7 @@ const SupportCaseWidget: React.FunctionComponent = () => {
               <Tr key={c.id}>
                 <Td dataLabel={columnNames.caseId}>
                   <Button
-                    className="pf-v5-u-pl-0"
+                    className="pf-v6-u-pl-0"
                     variant="link"
                     icon={<ExternalLinkAltIcon />}
                     iconPosition="end"

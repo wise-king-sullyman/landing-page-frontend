@@ -112,19 +112,19 @@ const ExploreCapabilities: React.FunctionComponent = () => {
         key={drawerData[activeItem].id}
         colorVariant="no-background"
       >
-        <DrawerPanelBody className="pf-v5-u-display-flex pf-v5-u-flex-direction-row">
+        <DrawerPanelBody className="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
           <Card
-            className="pf-v5-u-align-self-stretch pf-v5-u-flex-fill"
+            className="pf-v6-u-align-self-stretch pf-v6-u-flex-fill"
             isPlain
           >
-            <CardBody className="pf-v5-u-p-0 ">
+            <CardBody className="pf-v6-u-p-0 ">
               <TextContent>
-                <Text component="p" className="title pf-v5-u-mb-sm">
+                <Text component="p" className="title pf-v6-u-mb-sm">
                   {drawerData[activeItem].title}
                 </Text>
                 <Text
                   component="p"
-                  className="pf-v5-u-font-size-sm pf-v5-u-mb-sm"
+                  className="pf-v6-u-font-size-sm pf-v6-u-mb-sm"
                 >
                   {drawerData[activeItem].body}
                 </Text>
@@ -133,7 +133,7 @@ const ExploreCapabilities: React.FunctionComponent = () => {
                 component="a"
                 size="lg"
                 href={drawerData[activeItem].url}
-                className="pf-v5-u-mb-sm cta-button"
+                className="pf-v6-u-mb-sm cta-button"
                 ouiaId={drawerData[activeItem].ouiaId}
               >
                 {drawerData[activeItem].buttonName}
@@ -141,7 +141,7 @@ const ExploreCapabilities: React.FunctionComponent = () => {
             </CardBody>
           </Card>
           <img
-            className="widg-explore-image pf-v5-u-align-self-flex-start pf-v5-u-flex-none pf-v5-u-m-lg"
+            className="widg-explore-image pf-v6-u-align-self-flex-start pf-v6-u-flex-none pf-v6-u-m-lg"
             src={drawerData[activeItem].img}
           />
         </DrawerPanelBody>

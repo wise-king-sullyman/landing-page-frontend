@@ -4,7 +4,7 @@ import {
   errorInterceptor,
   interceptor500,
   responseDataInterceptor,
-} from '@redhat-cloud-services/frontend-components-utilities/interceptors';
+} from '@ausuliv/frontend-components-utilities/interceptors';
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use(authInterceptor);

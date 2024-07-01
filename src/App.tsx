@@ -7,17 +7,17 @@ import React, {
 } from 'react';
 import '@patternfly/patternfly/utilities/Text/text.css';
 import { Route, Routes } from 'react-router-dom';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 import { Bullseye } from '@patternfly/react-core/dist/dynamic/layouts/Bullseye';
 import { Spinner } from '@patternfly/react-core/dist/dynamic/components/Spinner';
 import { Provider } from 'react-redux';
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 import promiseMiddleware from 'redux-promise-middleware';
-import notificationsMiddleware from '@redhat-cloud-services/frontend-components-notifications/notificationsMiddleware';
-import ReducerRegistry from '@redhat-cloud-services/frontend-components-utilities/ReducerRegistry';
+import notificationsMiddleware from '@ausuliv/frontend-components-notifications/notificationsMiddleware';
+import ReducerRegistry from '@ausuliv/frontend-components-utilities/ReducerRegistry';
 import { Middleware, Reducer } from 'redux';
-import NotificationsPortal from '@redhat-cloud-services/frontend-components-notifications/NotificationPortal';
-import { notificationsReducer } from '@redhat-cloud-services/frontend-components-notifications/redux';
+import NotificationsPortal from '@ausuliv/frontend-components-notifications/NotificationPortal';
+import { notificationsReducer } from '@ausuliv/frontend-components-notifications/redux';
 import { useNavigate } from 'react-router-dom';
 import logger from 'redux-logger';
 

@@ -10,9 +10,9 @@ jest.mock('../routes/Landing', () => ({
   default: () => <span>Landing</span>,
 }));
 
-jest.mock('@redhat-cloud-services/frontend-components/useChrome', () => {
+jest.mock('@ausuliv/frontend-components/useChrome', () => {
   const actual = jest.requireActual(
-    '@redhat-cloud-services/frontend-components/useChrome'
+    '@ausuliv/frontend-components/useChrome'
   );
   return {
     __esModule: true,

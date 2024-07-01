@@ -15,7 +15,7 @@ describe('RHEL widget', () => {
 
   it('should be removed if clicked on remove', () => {
     cy.get(
-      `[data-ouia-component-id="landing-rhel-widget"] button.pf-v5-c-menu-toggle`
+      `[data-ouia-component-id="landing-rhel-widget"] button.pf-v6-c-menu-toggle`
     ).click();
     cy.get(
       '[data-ouia-component-id="landing-rhel-widget"] [data-ouia-component-id="remove-widget"]'

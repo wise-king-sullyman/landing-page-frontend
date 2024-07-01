@@ -7,8 +7,8 @@ import {
 import { Gallery } from '@patternfly/react-core/dist/dynamic/layouts/Gallery';
 
 import React, { Fragment } from 'react';
-import { useLastVisited } from '@redhat-cloud-services/chrome';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import { useLastVisited } from '@ausuliv/chrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 import { Link } from 'react-router-dom';
 import './recently-visited.scss';
 
@@ -31,7 +31,7 @@ const RecentlyVisited = () => {
   const lastVisited = useLastVisited();
   const lastVisitedData = lastVisited.slice(0, 10);
   return (
-    <Gallery hasGutter className="widget-recently-visited pf-v5-u-m-md">
+    <Gallery hasGutter className="widget-recently-visited pf-v6-u-m-md">
       {lastVisitedData.map(({ bundle, pathname, title }, index) => (
         <Fragment key={index}>
           <TextContent>

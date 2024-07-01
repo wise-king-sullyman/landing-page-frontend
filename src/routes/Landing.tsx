@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { useFlag } from '@unleash/proxy-client-react';
 import { ScalprumComponent } from '@scalprum/react-core';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 
 const Landing = () => {
   const scope = 'widgetLayout';
